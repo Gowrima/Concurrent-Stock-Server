@@ -33,14 +33,14 @@ stockclient.c <br>
 > ex) $ ./multiclient 172.10.22.13 9999 4
 
 ## Allowed Commands
-1. show
-   : show the stock table
+1. show <br>
+   : show the stock table <br>
 2. buy [stock ID] [# of stocks] <br>
-   : buy the stocks
-3. sell [stock ID] [# of stocks]
-   : sell the stocks
-5. exit
-   : close the client connection
+   : buy the stocks <br>
+3. sell [stock ID] [# of stocks] <br>
+   : sell the stocks <br>
+4. exit <br>
+   : close the client connection <br>
 
 ## Author
 Kim Minseon <br>
