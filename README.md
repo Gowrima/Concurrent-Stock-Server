@@ -3,10 +3,10 @@
 ## Purpose
 > 주식 서버는 다수의 client들이 접속했을 때, 각 client의 요청을 동시에 처리해줄 수 있어야 한다. 만약 주식 서버가 iterative하게 구현되어 있다면, 주식 서버는 한 번에 한 client와의 connection에 대해서만 request를 처리할 수 있다. 따라서 다수의 clients와 connection을 형성한 채로 여러 request를 동시에 처리하기 위해서는 주식 서버를 concurrent하게 구현할 필요가 있다. <br><br>
 > 서버를 concurrent하게 운영하기 위해서는 다음과 같이 3가지 방법을 적용해볼 수 있다.<br>
-> 1. Process-based approach <br>
-> 2. Event-based approach <br>
-> 3. Thread-based approach <br><br>
-본 프로젝트에서는 미니 주식서버인 stockserver가 concurrent하게 운영되도록 하기 위해 2, 3번 방법을 이용하였다. Event-based approach에서는 select 함수를 이용하였고, Thread-based approach에서는 pthread 계열의 함수를 이용하여 구현하였다. <br>
+>> 1. Process-based approach <br>
+>> 2. Event-based approach <br>
+>> 3. Thread-based approach <br><br>
+> 본 프로젝트에서는 미니 주식서버인 stockserver가 concurrent하게 운영되도록 하기 위해 2, 3번 방법을 이용하였다. Event-based approach에서는 select 함수를 이용하였고, Thread-based approach에서는 pthread 계열의 함수를 이용하여 구현하였다. <br>
 
 ## About Server
 stockserver.c <br>
