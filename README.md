@@ -5,7 +5,9 @@
 <br>
 <br>
 ## 실행 방법
-'''make''' <br>
+'''
+make
+'''
 <br>
 <br>
 ## Server 설명
