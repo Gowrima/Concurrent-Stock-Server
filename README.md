@@ -6,7 +6,7 @@
 <br>
 ## 실행 방법
 
-make
+  make
 
 <br>
 <br>
