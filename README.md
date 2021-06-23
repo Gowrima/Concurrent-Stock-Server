@@ -34,13 +34,13 @@ stockclient.c <br>
 
 ## Allowed Commands
 1. show
-  - show the stock table
+   - show the stock table
 2. buy [stock ID] [# of stocks] <br>
-  - buy the stocks
+   - buy the stocks
 3. sell [stock ID] [# of stocks]
-  - sell the stocks
-4. exit
-  - close the client connection
+   - sell the stocks
+5. exit
+   - close the client connection
 
 ## Author
 Kim Minseon <br>
