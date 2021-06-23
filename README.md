@@ -4,20 +4,44 @@
 프로젝트의 개요입니다. <br>
 <br>
 <br>
-## 실행 방법
-> make
-<br>
-<br>
-## Server 설명
+
+## About Server
 stockserver.c <br>
 ><br>
 echo.c <br>
 ><br>
-## Client 설명
+
+## About Client
 multiclient.c <br>
 ><br>
 stockclient.c <br>
 ><br>
+
+## How to compile
+> $ make
+
+## How to run stockserver
+> $ ./stockserver [port number]
+> ex) $ ./stockserver 9999
+
+## How to run stockclient
+> $ ./stockclient [server's IP address] [port number]
+> ex) $ ./stockclient 172.10.22.13 9999 <br>
+
+## How to run multiclients
+> $ ./multiclient [server's IP address] [port number] [# of clients] 
+> ex) $ ./multiclient 172.10.22.13 9999 4
+
+## Allowed Commands
+1. show
+- show the stock table
+2. buy [stock ID] [# of stocks] <br>
+- buy the stocks
+3. sell [stock ID] [# of stocks]
+- sell the stocks
+4. exit
+- close the client connection
+
 ## Author
 Kim Minseon <br>
 2021.06.03 - 2021.06.24 <br>
