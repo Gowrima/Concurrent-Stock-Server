@@ -54,7 +54,7 @@
 >    
 > 3. sell [stock ID] [# of stocks] <br>
 >    : sell the stocks <br>
-
+>
 > 4. exit <br>
 >   : close the client connection <br>
 >   
