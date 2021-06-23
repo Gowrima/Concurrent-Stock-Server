@@ -46,17 +46,18 @@
 > ex) $ ./multiclient 172.10.22.13 9999 4
 
 ## Allowed Commands
-1. show <br>
-   : show the stock table <br>
-   <br>
-2. buy [stock ID] [# of stocks] <br>
-   : buy the stocks <br>
-   <br>
-3. sell [stock ID] [# of stocks] <br>
-   : sell the stocks <br>
-   <br>
-4. exit <br>
-   : close the client connection <br>
+> 1. show <br>
+>    : show the stock table <br>
+>
+> 2. buy [stock ID] [# of stocks] <br>
+>    : buy the stocks <br>
+>    
+> 3. sell [stock ID] [# of stocks] <br>
+>    : sell the stocks <br>
+
+> 4. exit <br>
+>   : close the client connection <br>
+>   
 
 ## Author
 Kim Minseon <br>
