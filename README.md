@@ -6,7 +6,7 @@
 > 1. Process-based approach <br>
 > 2. Event-based approach <br>
 > 3. Thread-based approach <br><br>
-> 본 프로젝트에서는 미니 주식서버인 stockserver가 concurrent하게 운영되도록 하기 위해 2, 3번 방법을 이용하였다. Event-based approach에서는 select 함수를 이용하였고, Thread-based approach에서는 pthread 계열의 함수를 이용하여 구현하였다. <br>
+본 프로젝트에서는 미니 주식서버인 stockserver가 concurrent하게 운영되도록 하기 위해 2, 3번 방법을 이용하였다. Event-based approach에서는 select 함수를 이용하였고, Thread-based approach에서는 pthread 계열의 함수를 이용하여 구현하였다. <br>
 
 ## About Server
 stockserver.c <br>
