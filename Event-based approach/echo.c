@@ -65,27 +65,27 @@ item* search(int id)
 
 int buy(int id, int num)
 {
-	item* cur = search(id); 		/* Get the node from stock_table */
+	item* cur = search(id); 	/* Get the node from stock_table */
 	
-	if (cur->left_stock - num < 0) 		/* If left_stocks are not enough */
+	if (cur->left_stock - num < 0) 	/* If left_stocks are not enough */
 		return -1;
 
 	/* Update stock table */
-	P(&w);					/* Block writers */
-	cur->left_stock -= num; 		/* Critical section */
-	V(&w);					/* Unblock writers */
+	P(&w);				/* Block writers */
+	cur->left_stock -= num; 	/* Critical section */
+	V(&w);				/* Unblock writers */
 
 	return 0;
 }
 
 void sell(int id, int num)
 {	
-	item* cur = search(id);			/* Get the node from stock_table */
+	item* cur = search(id);		/* Get the node from stock_table */
 
 	/* Update stock table */
-	P(&w);					/* Block writers */
-	cur->left_stock += num; 		/* Critical section */
-	V(&w);					/* Unblock writers */
+	P(&w);				/* Block writers */
+	cur->left_stock += num; 	/* Critical section */
+	V(&w);				/* Unblock writers */
 }
 
 char *echo(char *buf) 
