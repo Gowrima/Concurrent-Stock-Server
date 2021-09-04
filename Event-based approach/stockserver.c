@@ -1,14 +1,14 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- *																 *
- * Sogang University											 *
- * Computer Science and Engineering								 *
- * System Programming											 *
- *																 *
- * Project name : Concurrent StockServer						 *
- * FIle name    : stockserver.c									 *
- * Author       : 20181603 kim minseon							 *
- * Date         : 2021 - 06 - 22								 *
- *																 *
+ *																 
+ * Sogang University											 
+ * Computer Science and Engineering								 
+ * System Programming											 
+ *															 
+ * Project name : Concurrent StockServer						 
+ * FIle name    : stockserver.c									 
+ * Author       : 20181603 kim minseon							 
+ * Date         : 2021 - 06 - 22								 
+ *																 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #include "csapp.h"
@@ -97,26 +97,26 @@ void check_clients(pool *p)
 
 int main(int argc, char **argv) 
 {
-    int listenfd, connfd;
-    socklen_t clientlen;
-    struct sockaddr_storage clientaddr;  /* Enough space for any address */  //line:netp:echoserveri:sockaddrstorage
-    char client_hostname[MAXLINE], client_port[MAXLINE];
+	int listenfd, connfd;
+	socklen_t clientlen;
+	struct sockaddr_storage clientaddr;  /* Enough space for any address */
+	char client_hostname[MAXLINE], client_port[MAXLINE];
 	static pool pool;
 
-    if (argc != 2) {
+	if (argc != 2) {
 		fprintf(stderr, "usage: %s <port>\n", argv[0]);
 		exit(0);
-    }
+	}
 
 	read_file();			/* Get stock table from stock.txt */
 	Sem_init(&w, 0, 1);		/* Initialize w = 1 */
-	Sem_init(&mutex, 0, 1); /* Initialize mutex = 1 */
+	Sem_init(&mutex, 0, 1); 	/* Initialize mutex = 1 */
 	readcnt = 0;			/* Initialize readcount */
 
-    listenfd = Open_listenfd(argv[1]);
+	listenfd = Open_listenfd(argv[1]);
 	init_pool(listenfd, &pool);
 
-    while (1) {
+	while (1) {
 		/* Wait for listening/connected descriptors to become ready */
 		pool.ready_set = pool.read_set;
 		pool.nready = select(pool.maxfd+1, &pool.ready_set, NULL, NULL, NULL);
@@ -132,8 +132,8 @@ int main(int argc, char **argv)
 
 		/* Echo a text line from each ready connected descriptor */
 		check_clients(&pool);
-    }
-    exit(0);
+	}
+    	exit(0);
 }
 
 
